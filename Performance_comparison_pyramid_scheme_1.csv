@@ -1,0 +1,30 @@
+Resolution:_0.03125
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 32.42857142857143 0.17063914026532853 0.047952161253679265 0.2902339563544126 0.19607519123873468 2.779840167516744 1.1545189717748152
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 881.4285714285714 0.3525075912475586 0.11922405131154261 0.28806831457180826 0.19494399889546082 2.7566702814233834 1.15888454706078 0.4840722427038239
+Resolution:_0.0625
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 37.714285714285715 0.25640433175223215 0.07406541110694431 0.15025769702562494 0.14583731534799432 1.679044243585962 0.7914642221627776
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 602.4285714285714 0.3474541051047189 0.2538758274653284 0.15650332137592765 0.146843175774169 1.7379794123294983 0.7986196254630096 0.7379516545788246
+Resolution:_0.125
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 82.57142857142857 1.071303197315761 0.4493382476188654 0.11404875508658176 0.1414354341739661 1.2419903779699302 0.6880025920561904
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 796.1428571428571 1.0206523622785295 0.7174029645497755 0.11825173735559284 0.14077391136231918 1.2910439603260906 0.6986439593416532 1.049625942102517
+Resolution:_0.25
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 115.0 6.611412729535784 3.3700948547240874 0.10203956788988669 0.13461942567641533 1.044903096961626 0.6604805686596102
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 517.1428571428571 2.3309992381504605 1.7238738635599675 0.10269639828790425 0.13536910267605365 1.077137746959637 0.6527209245397484 2.8362998242683393
+Resolution:_0.5
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 274.85714285714283 61.115693841661724 29.98861923961948 0.0940184095937812 0.12828593278572809 0.8452651260021022 0.6031794939702696
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 752.5714285714286 15.843090329851423 11.111723510148197 0.09425771567855255 0.12887115771397384 0.8611927865239252 0.6018853016947494 3.8575614081116503
+Resolution:_1.0
+Linearized_Optical_Flow Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std):
+single 0.04 589.2857142857143 640.4636760779789 455.4861159078042 0.09009963504886646 0.12658550967145327 0.7005684765634713 0.5337966650751644
+Explicit Alpha_Values Iterations_(avg): Time_to_Converge_(avg): Time_to_Converge_(std): Angular_Error_(avg): Angular_Error_(std): End_Point_Error_(avg): End_Point_Error_(std): Speed_Up
+single 0.04 779.0 93.03546452522278 94.63069776832093 0.09043899590646633 0.1268992274025899 0.7181688739682464 0.52210840783289 6.884081025944072
