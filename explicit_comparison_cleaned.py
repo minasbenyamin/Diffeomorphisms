@@ -1,3 +1,12 @@
+'''
+@author Ganesh Sundaramoorthi 
+@author Minas Benyamin
+'''
+
+
+'''
+List of Imports and Dependencies 
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import interpolate, ndimage, integrate, sparse
@@ -156,7 +165,9 @@ def computeLinearizedFlowOperator(gradI1w,m,n,alpha,dt):
 
     return computeDataLinearizedFlowOperator(gradI1w, m, n, dt) - alpha*computeLaplaceFlowOperator(m,n)
 
-
+'''
+Performs conjugate gradient descent 
+'''
 def linearizedOpticalFlow(I0, I1, gradI1, phi, v, alpha, iters):
 
     phi_k = phi.copy()
@@ -200,26 +211,10 @@ def computeStepSize4(alpha):
         dt = 2 / sqrt(1/alpha )
     return dt*0.8
 
-def explicitEvol2nd( I0, I1, gradI1, phi, v, T, alpha, iters,lamb):
-
-    dt = computeStepSize4(alpha)
-
-    phi_k = np.copy(phi)
-    v_k = np.copy(v)
-    for i in range(iters):
-#        dt = computeStepSize( I0, I1, phi )
-
-        T += dt
-        phi_kp1 = phi_k + dt * v_k
-        e_grad = energy_grad(I0, I1, gradI1, phi_kp1, alpha)
-#        v_kp1 = v_k + dt * (-3/T * v_k + e_grad)
-#        v_kp1 = (v_k + dt * e_grad)/(1+3*dt/T)
-        #v_kp1 = (v_k + dt * (-3 / (2*T) * v_k + e_grad)) /(1+dt*3/(2*T))
-        v_kp1 = (v_k + dt * (-lamb * v_k + e_grad)) /(1+dt*lamb)
-        phi_k = phi_kp1
-        v_k = v_kp1
-
-    return phi_k, v_k, T
+'''
+ Runs 2nd order accelerated gradient descent using an explicit 
+ first order scheme 
+'''
 
 def explicitEvol( I0, I1, gradI1, phi, v, T, alpha, iters,lamb):
 
@@ -489,6 +484,7 @@ if __name__ == '__main__':
     alpha_range = [0.04]
     lambda_image_percentage = .04
     alpha_labels = ['single']
+    # set number of iterations per pyramid level 
     iters = 2000
     (ground_truth_files,I0_paths,I1_paths) = file_list(image_selection)
     (old_linear_phi,old_explicit_phi,blank_1,blank_2) = build_blank_arrays(len(ground_truth_files))
@@ -497,7 +493,9 @@ if __name__ == '__main__':
     
     # explicit = 0, RK4 = 1, Nesterov = 2, gradient descent = 3, RK45 = 4, Sobolev = 5, LinearOptFlow = 6
     for nn in lambda_schemes:
+        # iterate through choice of fidelity coefficient 
         if(use_pyramid == 1):
+            # use the pyramid scheme to speed up convergence 
             csv_name = 'Performance_comparison_pyramid_scheme_' + str(nn) + '.csv'
         if(use_pyramid == 0):
             csv_name = 'Performance_comparison_no_pyramid_scheme_' + str(nn) + '.csv'
